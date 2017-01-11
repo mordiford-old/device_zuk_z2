@@ -4,8 +4,8 @@
    "target_path": "kernel/zuk/msm8996"
  },
  {
-   "repository": "android_vendor_zuk_z2_plus",
-   "target_path": "vendor/zuk/z2_plus"
+   "repository": "android_vendor_zuk_z2",
+   "target_path": "vendor/zuk/z2"
  },
  {
    "repository": "android_device_qcom_common",
