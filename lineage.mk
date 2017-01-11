@@ -17,26 +17,23 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from z2_plus device
-$(call inherit-product, device/zuk/z2_plus/device.mk)
+# Inherit from z2 device
+$(call inherit-product, device/zuk/z2/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_z2_plus
-PRODUCT_DEVICE := z2_plus
+PRODUCT_NAME := lineage_z2
+PRODUCT_DEVICE := z2
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
 
 PRODUCT_GMS_CLIENTID_BASE := android-zuk
 
-TARGET_VENDOR_PRODUCT_NAME := Z2_plus
-TARGET_VENDOR_DEVICE_NAME := Z2_plus
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=Z2_plus PRODUCT_NAME=Z2_plus
+TARGET_VENDOR_PRODUCT_NAME := Z2
+TARGET_VENDOR_DEVICE_NAME := Z2
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=Z2_plus PRODUCT_NAME=Z2
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 
 TARGET_VENDOR := zuk
-
-# Unofficial build ID
-TARGET_UNOFFICIAL_BUILD_ID := OrdenKrieger

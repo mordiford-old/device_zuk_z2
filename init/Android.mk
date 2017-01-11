@@ -20,7 +20,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES := system/core/init
-LOCAL_SRC_FILES := init_z2_plus.cpp
-LOCAL_MODULE := libinit_z2_plus
+LOCAL_SRC_FILES := init_z2.cpp
+LOCAL_MODULE := libinit_z2
 
 include $(BUILD_STATIC_LIBRARY)

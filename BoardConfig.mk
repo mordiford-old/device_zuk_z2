@@ -24,7 +24,7 @@
 
 TARGET_OTA_ASSERT_DEVICE := z2,Z2,z2plus,z2_plus
 
-PLATFORM_PATH := device/zuk/z2_plus
+PLATFORM_PATH := device/zuk/z2
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
@@ -116,9 +116,6 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 # CM Hardware
 BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/cmhw
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw
 
 # CNE and DPM
 TARGET_LDPRELOAD := libNimsWrap.so
@@ -156,8 +153,8 @@ TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_z2_plus
-TARGET_RECOVERY_DEVICE_MODULES := libinit_z2_plus
+TARGET_INIT_VENDOR_LIB := libinit_z2
+TARGET_RECOVERY_DEVICE_MODULES := libinit_z2
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
 # Keystore
@@ -221,4 +218,4 @@ WIFI_DRIVER_MODULE_NAME := "wlan"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/zuk/z2_plus/BoardConfigVendor.mk
+-include vendor/zuk/z2/BoardConfigVendor.mk
