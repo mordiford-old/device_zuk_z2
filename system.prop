@@ -278,3 +278,5 @@ use.qti.sw.ape.decoder=true
 flac.sw.decoder.24bit.support=true
 
 
+# Storage
+ro.sys.sdcardfs=true
