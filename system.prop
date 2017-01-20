@@ -162,3 +162,11 @@ ro.roaming.vendor=redtea
 ro.sys.sdcardfs=true
 
 persist.sys.ssr.enable_ramdumps=0
+
+# Hardware Info
+ro.device.chipset=Qualcomm MSM8996 Snapdragon 820
+ro.device.cpu=Quad-core (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)
+ro.device.gpu=Adreno 530
+ro.device.rear_cam=13 MP
+ro.device.front_cam=8 MP
+ro.device.screen_res=1080 x 1920
