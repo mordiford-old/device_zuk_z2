@@ -20,10 +20,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from z2 device
 $(call inherit-product, device/zuk/z2/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
-PRODUCT_NAME := lineage_z2
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
+PRODUCT_NAME := aicp_z2
 PRODUCT_DEVICE := z2
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
@@ -37,3 +40,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=Z2_plus PRODUCT_NAME=Z2
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 
 TARGET_VENDOR := zuk
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+        DEVICE_MAINTAINERS="lindwurm (Unofficial)"
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+-include vendor/aicp/configs/bootanimation.mk
